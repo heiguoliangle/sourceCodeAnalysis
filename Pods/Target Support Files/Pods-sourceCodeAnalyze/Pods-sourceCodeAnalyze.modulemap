@@ -1,0 +1,6 @@
+framework module Pods_sourceCodeAnalyze {
+  umbrella header "Pods-sourceCodeAnalyze-umbrella.h"
+
+  export *
+  module * { export * }
+}

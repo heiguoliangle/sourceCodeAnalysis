@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-sourceCodeAnalyze/Pods-sourceCodeAnalyze-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework
+${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework

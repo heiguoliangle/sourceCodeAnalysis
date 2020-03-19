@@ -56,6 +56,13 @@ static NSString * kPart = @"kPart";
     [self addDataWithClass:StartTimeTest.class];
     [self addDataWithClass:ProxyTest.class];
     [self addDataWithClass:AnimationTest.class];
+    [self addDataWithStr:@"TimerTest"];
+
+}
+
+- (void)addDataWithStr:(NSString *)classStr {
+    Class class = NSClassFromString(classStr);
+    [self addDataWithClass:class];
 }
 
 - (void)addDataWithClass:(Class)class {

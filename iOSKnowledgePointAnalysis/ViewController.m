@@ -57,7 +57,16 @@ static NSString * kPart = @"kPart";
     [self addDataWithClass:ProxyTest.class];
     [self addDataWithClass:AnimationTest.class];
     [self addDataWithStr:@"TimerTest"];
+    [self addDataWithStr:@"NotifyTest"];
 
+}
+
+- (void)addNotify {
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(test:) name:NULL object:@"1"];
+}
+
+- (void)test:(NSNotification *)noti {
+    NSLog(@"%@",noti);
 }
 
 - (void)addDataWithStr:(NSString *)classStr {

@@ -58,6 +58,7 @@ static NSString * kPart = @"kPart";
     [self addDataWithClass:AnimationTest.class];
     [self addDataWithStr:@"TimerTest"];
     [self addDataWithStr:@"NotifyTest"];
+    [self addDataWithStr:@"InstrumentTest"];
 
 }
 

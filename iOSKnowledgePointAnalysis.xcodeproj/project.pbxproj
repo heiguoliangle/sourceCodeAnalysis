@@ -51,6 +51,8 @@
 		F5F5CBD424231DFB000B9164 /* AnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F5CBD324231DFB000B9164 /* AnimationVC.m */; };
 		F5F5CBD724237B1C000B9164 /* TimerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F5CBD624237B1C000B9164 /* TimerTest.m */; };
 		F5F5CBD92423866C000B9164 /* timer.md in Resources */ = {isa = PBXBuildFile; fileRef = F5F5CBD82423866C000B9164 /* timer.md */; };
+		F5F5CBFD2425A4BD000B9164 /* InstrumentTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F5CBFC2425A4BD000B9164 /* InstrumentTest.m */; };
+		F5F5CC002425A5FD000B9164 /* InstrumentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F5CBFF2425A5FD000B9164 /* InstrumentVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -132,6 +134,10 @@
 		F5F5CBD524237B1C000B9164 /* TimerTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerTest.h; sourceTree = "<group>"; };
 		F5F5CBD624237B1C000B9164 /* TimerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerTest.m; sourceTree = "<group>"; };
 		F5F5CBD82423866C000B9164 /* timer.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = timer.md; sourceTree = "<group>"; };
+		F5F5CBFB2425A4BD000B9164 /* InstrumentTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstrumentTest.h; sourceTree = "<group>"; };
+		F5F5CBFC2425A4BD000B9164 /* InstrumentTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstrumentTest.m; sourceTree = "<group>"; };
+		F5F5CBFE2425A5FD000B9164 /* InstrumentVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstrumentVC.h; sourceTree = "<group>"; };
+		F5F5CBFF2425A5FD000B9164 /* InstrumentVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstrumentVC.m; sourceTree = "<group>"; };
 		FBC17B68E1C398652D79B0B3 /* Pods-iOSKnowledgePointAnalysis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSKnowledgePointAnalysis.debug.xcconfig"; path = "Target Support Files/Pods-iOSKnowledgePointAnalysis/Pods-iOSKnowledgePointAnalysis.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -225,6 +231,7 @@
 		F56D8A942419E253000F35B5 /* BaseKnowledge */ = {
 			isa = PBXGroup;
 			children = (
+				F5F5CBFA2425A49A000B9164 /* InstrumentTest */,
 				F5F5CBCE24231DDB000B9164 /* Animation */,
 				F5F5CBC324231679000B9164 /* LoadPerformance */,
 				F5F5CBBC24231647000B9164 /* CrashCatch */,
@@ -423,6 +430,17 @@
 			path = Animation;
 			sourceTree = "<group>";
 		};
+		F5F5CBFA2425A49A000B9164 /* InstrumentTest */ = {
+			isa = PBXGroup;
+			children = (
+				F5F5CBFB2425A4BD000B9164 /* InstrumentTest.h */,
+				F5F5CBFC2425A4BD000B9164 /* InstrumentTest.m */,
+				F5F5CBFE2425A5FD000B9164 /* InstrumentVC.h */,
+				F5F5CBFF2425A5FD000B9164 /* InstrumentVC.m */,
+			);
+			path = InstrumentTest;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -581,6 +599,7 @@
 				F56D8A7E2419DA10000F35B5 /* ViewController.m in Sources */,
 				F5F5CBC22423165A000B9164 /* RCCrashLog.m in Sources */,
 				F56D8AA7241A401D000F35B5 /* KVOTest.m in Sources */,
+				F5F5CBFD2425A4BD000B9164 /* InstrumentTest.m in Sources */,
 				F5F5CBB924230E90000B9164 /* ProxyTest.m in Sources */,
 				F56D8AB3241B233F000F35B5 /* KVOvc.m in Sources */,
 				F56D8A9E241A2E37000F35B5 /* FrameBoundsTest.m in Sources */,
@@ -597,6 +616,7 @@
 				F5F5CBD724237B1C000B9164 /* TimerTest.m in Sources */,
 				F5F5CBD124231DEA000B9164 /* AnimationTest.m in Sources */,
 				F56D8A7B2419DA10000F35B5 /* SceneDelegate.m in Sources */,
+				F5F5CC002425A5FD000B9164 /* InstrumentVC.m in Sources */,
 				F5F5CAEE241F31B1000B9164 /* ThreadTest.m in Sources */,
 				F5F5CBB124221347000B9164 /* NotifyTest.m in Sources */,
 				F5F5CBC12423165A000B9164 /* RCCrashManager.m in Sources */,

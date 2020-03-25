@@ -609,7 +609,7 @@ static BOOL aspect_isSelectorAllowedAndTrack(NSObject *self, SEL selector, Aspec
             return NO;
         }
 
-        do {
+        do {// 之前是否已经存在
             tracker = swizzledClassesDict[currentClass];
             if ([tracker.selectorNames containsObject:selectorName]) {
                 if (klass == currentClass) {
@@ -625,11 +625,11 @@ static BOOL aspect_isSelectorAllowedAndTrack(NSObject *self, SEL selector, Aspec
         // Add the selector as being modified.
         currentClass = klass;
         AspectTracker *subclassTracker = nil;
-        do {
+        do {// 之前未存在,新建一个
             tracker = swizzledClassesDict[currentClass];
             if (!tracker) {
                 tracker = [[AspectTracker alloc] initWithTrackedClass:currentClass];
-                swizzledClassesDict[(id<NSCopying>)currentClass] = tracker;
+                swizzledClassesDict[(id<NSCopying>)currentClass] = tracker;// 这里添加了一个新的hook类,这个类是有可能是父类
             }
             if (subclassTracker) {
                 [tracker addSubclassTracker:subclassTracker hookingSelectorName:selectorName];

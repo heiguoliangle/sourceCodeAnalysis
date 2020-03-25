@@ -10,7 +10,7 @@
 
 @implementation subMsgTest1
 +(void)load {
-    [super load];
+//    [super load];
     NSLog(@"SubMsgTest1 load");
 }
 @end

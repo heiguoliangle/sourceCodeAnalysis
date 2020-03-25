@@ -59,7 +59,8 @@ static NSString * kPart = @"kPart";
     [self addDataWithStr:@"TimerTest"];
     [self addDataWithStr:@"NotifyTest"];
     [self addDataWithStr:@"InstrumentTest"];
-
+    [self addDataWithStr:@"GCDTest"];
+    [self addDataWithStr:@"CategoryTest"];
 }
 
 - (void)addNotify {

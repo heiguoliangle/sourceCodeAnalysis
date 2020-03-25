@@ -53,6 +53,11 @@
 		F5F5CBD92423866C000B9164 /* timer.md in Resources */ = {isa = PBXBuildFile; fileRef = F5F5CBD82423866C000B9164 /* timer.md */; };
 		F5F5CBFD2425A4BD000B9164 /* InstrumentTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F5CBFC2425A4BD000B9164 /* InstrumentTest.m */; };
 		F5F5CC002425A5FD000B9164 /* InstrumentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F5CBFF2425A5FD000B9164 /* InstrumentVC.m */; };
+		F5F5CC042425BA26000B9164 /* GCDTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F5CC032425BA26000B9164 /* GCDTest.m */; };
+		F5F5CC082426FC78000B9164 /* CategoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F5CC072426FC78000B9164 /* CategoryTest.m */; };
+		F5F5CC0B2426FC8E000B9164 /* CategoryTest+property.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F5CC0A2426FC8E000B9164 /* CategoryTest+property.m */; };
+		F5F5CC0D2426FE4F000B9164 /* Category.md in Resources */ = {isa = PBXBuildFile; fileRef = F5F5CC0C2426FE4F000B9164 /* Category.md */; };
+		F5F5CC1024285FCF000B9164 /* Categroy1Test.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F5CC0F24285FCF000B9164 /* Categroy1Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -138,6 +143,15 @@
 		F5F5CBFC2425A4BD000B9164 /* InstrumentTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstrumentTest.m; sourceTree = "<group>"; };
 		F5F5CBFE2425A5FD000B9164 /* InstrumentVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstrumentVC.h; sourceTree = "<group>"; };
 		F5F5CBFF2425A5FD000B9164 /* InstrumentVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstrumentVC.m; sourceTree = "<group>"; };
+		F5F5CC022425BA26000B9164 /* GCDTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTest.h; sourceTree = "<group>"; };
+		F5F5CC032425BA26000B9164 /* GCDTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTest.m; sourceTree = "<group>"; };
+		F5F5CC062426FC78000B9164 /* CategoryTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryTest.h; sourceTree = "<group>"; };
+		F5F5CC072426FC78000B9164 /* CategoryTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryTest.m; sourceTree = "<group>"; };
+		F5F5CC092426FC8E000B9164 /* CategoryTest+property.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CategoryTest+property.h"; sourceTree = "<group>"; };
+		F5F5CC0A2426FC8E000B9164 /* CategoryTest+property.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CategoryTest+property.m"; sourceTree = "<group>"; };
+		F5F5CC0C2426FE4F000B9164 /* Category.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Category.md; sourceTree = "<group>"; };
+		F5F5CC0E24285FCF000B9164 /* Categroy1Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Categroy1Test.h; sourceTree = "<group>"; };
+		F5F5CC0F24285FCF000B9164 /* Categroy1Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Categroy1Test.m; sourceTree = "<group>"; };
 		FBC17B68E1C398652D79B0B3 /* Pods-iOSKnowledgePointAnalysis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSKnowledgePointAnalysis.debug.xcconfig"; path = "Target Support Files/Pods-iOSKnowledgePointAnalysis/Pods-iOSKnowledgePointAnalysis.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -231,6 +245,8 @@
 		F56D8A942419E253000F35B5 /* BaseKnowledge */ = {
 			isa = PBXGroup;
 			children = (
+				F5F5CC052426FC69000B9164 /* Category */,
+				F5F5CC012425BA13000B9164 /* GCD */,
 				F5F5CBFA2425A49A000B9164 /* InstrumentTest */,
 				F5F5CBCE24231DDB000B9164 /* Animation */,
 				F5F5CBC324231679000B9164 /* LoadPerformance */,
@@ -441,6 +457,29 @@
 			path = InstrumentTest;
 			sourceTree = "<group>";
 		};
+		F5F5CC012425BA13000B9164 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				F5F5CC022425BA26000B9164 /* GCDTest.h */,
+				F5F5CC032425BA26000B9164 /* GCDTest.m */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		F5F5CC052426FC69000B9164 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F5F5CC062426FC78000B9164 /* CategoryTest.h */,
+				F5F5CC072426FC78000B9164 /* CategoryTest.m */,
+				F5F5CC0E24285FCF000B9164 /* Categroy1Test.h */,
+				F5F5CC0F24285FCF000B9164 /* Categroy1Test.m */,
+				F5F5CC092426FC8E000B9164 /* CategoryTest+property.h */,
+				F5F5CC0A2426FC8E000B9164 /* CategoryTest+property.m */,
+				F5F5CC0C2426FE4F000B9164 /* Category.md */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -531,6 +570,7 @@
 				F56D8A812419DA10000F35B5 /* Main.storyboard in Resources */,
 				F56D8AA3241A3426000F35B5 /* Bounds.md in Resources */,
 				F5F5CAF0241F3352000B9164 /* thread.md in Resources */,
+				F5F5CC0D2426FE4F000B9164 /* Category.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,6 +644,7 @@
 				F56D8AB3241B233F000F35B5 /* KVOvc.m in Sources */,
 				F56D8A9E241A2E37000F35B5 /* FrameBoundsTest.m in Sources */,
 				F5F5CBB5242300B5000B9164 /* StartTimeTest.m in Sources */,
+				F5F5CC082426FC78000B9164 /* CategoryTest.m in Sources */,
 				F56D8A782419DA10000F35B5 /* AppDelegate.m in Sources */,
 				F56D8A922419DCFF000F35B5 /* TestBaseModel.m in Sources */,
 				F56D8ABC241B2F7D000F35B5 /* NSObject+KVOBlock.m in Sources */,
@@ -611,10 +652,13 @@
 				F56D8AA1241A2E4E000F35B5 /* FrameBoundsTestVC.m in Sources */,
 				F5F5CBAA2420EBC9000B9164 /* MsgTest.m in Sources */,
 				F5F5CBC72423169D000B9164 /* DTLauchItemManager.m in Sources */,
+				F5F5CC042425BA26000B9164 /* GCDTest.m in Sources */,
+				F5F5CC1024285FCF000B9164 /* Categroy1Test.m in Sources */,
 				F5F5CBAD2421FAB5000B9164 /* subMsgTest1.m in Sources */,
 				F56D8A892419DA12000F35B5 /* main.m in Sources */,
 				F5F5CBD724237B1C000B9164 /* TimerTest.m in Sources */,
 				F5F5CBD124231DEA000B9164 /* AnimationTest.m in Sources */,
+				F5F5CC0B2426FC8E000B9164 /* CategoryTest+property.m in Sources */,
 				F56D8A7B2419DA10000F35B5 /* SceneDelegate.m in Sources */,
 				F5F5CC002425A5FD000B9164 /* InstrumentVC.m in Sources */,
 				F5F5CAEE241F31B1000B9164 /* ThreadTest.m in Sources */,

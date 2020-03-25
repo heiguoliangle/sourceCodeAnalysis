@@ -13,8 +13,12 @@
 @implementation SubMsgTest
 
 +(void)load {
-    [super load];
     NSLog(@"SubMsgTest load");
+}
+
++ (void)initialize {
+    [super initialize];
+    NSLog(@"SubMsgTest initialize");
 }
 
 @end
@@ -24,6 +28,11 @@
 +(void)load {
 
     NSLog(@"MsgTest load");
+}
+
++ (void)initialize {
+    [super initialize];
+    NSLog(@"MsgTest initialize");
 }
 
 + (BOOL)resolveInstanceMethod:(SEL)sel {
@@ -71,6 +80,7 @@ void myEatMehtod(id self,SEL _cmd){
     NSMutableArray * arr = [super addJumpModel];
     
     MsgTest * msgTest = [MsgTest new];
+    SubMsgTest * a = [SubMsgTest new];
     //    __block KVOTest * kvoTest1 = [KVOTest defaultObj];
     //    [kvoTest addObserver:kvoTest forKeyPath:@"name" options:(NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld) context:NULL];
     JumpModel * j1 = [[JumpModel alloc]initWithIsClassMethond:NO kClass:self sel:@selector(test) title:@"发送不存在的方法" obj:msgTest arg:nil];

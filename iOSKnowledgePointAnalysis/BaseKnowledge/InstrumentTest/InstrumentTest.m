@@ -30,7 +30,7 @@
 }
 
 - (void)dealloc {
-    NSLog(@"dealloc");
+//    NSLog(@"dealloc");
 }
 
 #pragma mark - father func

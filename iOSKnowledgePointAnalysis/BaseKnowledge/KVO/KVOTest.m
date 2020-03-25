@@ -85,7 +85,7 @@ static dispatch_once_t onceToken;
 }
 
 - (void)dealloc {
-    NSLog(@"dealloc");
+//    NSLog(@"dealloc");
 }
 
 

@@ -58,6 +58,11 @@
 		F5F5CC0B2426FC8E000B9164 /* CategoryTest+property.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F5CC0A2426FC8E000B9164 /* CategoryTest+property.m */; };
 		F5F5CC0D2426FE4F000B9164 /* Category.md in Resources */ = {isa = PBXBuildFile; fileRef = F5F5CC0C2426FE4F000B9164 /* Category.md */; };
 		F5F5CC1024285FCF000B9164 /* Categroy1Test.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F5CC0F24285FCF000B9164 /* Categroy1Test.m */; };
+		F5F5CC14242AF4FA000B9164 /* MsgSwizzingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F5CC13242AF4F9000B9164 /* MsgSwizzingTest.m */; };
+		F5F5CC17242AFACB000B9164 /* MsgTest+msgtest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F5CC16242AFACB000B9164 /* MsgTest+msgtest.m */; };
+		F5F5CC1D242AFBD5000B9164 /* subMsgTest1+submsgtest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F5CC1C242AFBD5000B9164 /* subMsgTest1+submsgtest.m */; };
+		F5F5CC21242B0410000B9164 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F5CC1F242B0410000B9164 /* Aspects.m */; };
+		F5F5CC25242B3CC4000B9164 /* RSSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F5CC24242B3CC4000B9164 /* RSSwizzle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -152,6 +157,16 @@
 		F5F5CC0C2426FE4F000B9164 /* Category.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Category.md; sourceTree = "<group>"; };
 		F5F5CC0E24285FCF000B9164 /* Categroy1Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Categroy1Test.h; sourceTree = "<group>"; };
 		F5F5CC0F24285FCF000B9164 /* Categroy1Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Categroy1Test.m; sourceTree = "<group>"; };
+		F5F5CC12242AF4F9000B9164 /* MsgSwizzingTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MsgSwizzingTest.h; sourceTree = "<group>"; };
+		F5F5CC13242AF4F9000B9164 /* MsgSwizzingTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MsgSwizzingTest.m; sourceTree = "<group>"; };
+		F5F5CC15242AFACB000B9164 /* MsgTest+msgtest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MsgTest+msgtest.h"; sourceTree = "<group>"; };
+		F5F5CC16242AFACB000B9164 /* MsgTest+msgtest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MsgTest+msgtest.m"; sourceTree = "<group>"; };
+		F5F5CC1B242AFBD5000B9164 /* subMsgTest1+submsgtest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "subMsgTest1+submsgtest.h"; sourceTree = "<group>"; };
+		F5F5CC1C242AFBD5000B9164 /* subMsgTest1+submsgtest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "subMsgTest1+submsgtest.m"; sourceTree = "<group>"; };
+		F5F5CC1F242B0410000B9164 /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
+		F5F5CC20242B0410000B9164 /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
+		F5F5CC23242B3CC4000B9164 /* RSSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSwizzle.h; sourceTree = "<group>"; };
+		F5F5CC24242B3CC4000B9164 /* RSSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSwizzle.m; sourceTree = "<group>"; };
 		FBC17B68E1C398652D79B0B3 /* Pods-iOSKnowledgePointAnalysis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSKnowledgePointAnalysis.debug.xcconfig"; path = "Target Support Files/Pods-iOSKnowledgePointAnalysis/Pods-iOSKnowledgePointAnalysis.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -353,6 +368,8 @@
 		F5F5CB0E2420C01A000B9164 /* ThirdSourceCode */ = {
 			isa = PBXGroup;
 			children = (
+				F5F5CC22242B3CC4000B9164 /* RSSwizzle */,
+				F5F5CC1E242B03FE000B9164 /* Aspects */,
 				F5F5CB0F2420C02F000B9164 /* IGList */,
 			);
 			path = ThirdSourceCode;
@@ -378,10 +395,15 @@
 		F5F5CBA72420EBB7000B9164 /* msg */ = {
 			isa = PBXGroup;
 			children = (
+				F5F5CC11242AF45B000B9164 /* Swizzing */,
 				F5F5CBA82420EBC9000B9164 /* MsgTest.h */,
 				F5F5CBA92420EBC9000B9164 /* MsgTest.m */,
 				F5F5CBAB2421FAB5000B9164 /* subMsgTest1.h */,
 				F5F5CBAC2421FAB5000B9164 /* subMsgTest1.m */,
+				F5F5CC15242AFACB000B9164 /* MsgTest+msgtest.h */,
+				F5F5CC16242AFACB000B9164 /* MsgTest+msgtest.m */,
+				F5F5CC1B242AFBD5000B9164 /* subMsgTest1+submsgtest.h */,
+				F5F5CC1C242AFBD5000B9164 /* subMsgTest1+submsgtest.m */,
 			);
 			path = msg;
 			sourceTree = "<group>";
@@ -478,6 +500,33 @@
 				F5F5CC0C2426FE4F000B9164 /* Category.md */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		F5F5CC11242AF45B000B9164 /* Swizzing */ = {
+			isa = PBXGroup;
+			children = (
+				F5F5CC12242AF4F9000B9164 /* MsgSwizzingTest.h */,
+				F5F5CC13242AF4F9000B9164 /* MsgSwizzingTest.m */,
+			);
+			path = Swizzing;
+			sourceTree = "<group>";
+		};
+		F5F5CC1E242B03FE000B9164 /* Aspects */ = {
+			isa = PBXGroup;
+			children = (
+				F5F5CC20242B0410000B9164 /* Aspects.h */,
+				F5F5CC1F242B0410000B9164 /* Aspects.m */,
+			);
+			path = Aspects;
+			sourceTree = "<group>";
+		};
+		F5F5CC22242B3CC4000B9164 /* RSSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				F5F5CC23242B3CC4000B9164 /* RSSwizzle.h */,
+				F5F5CC24242B3CC4000B9164 /* RSSwizzle.m */,
+			);
+			path = RSSwizzle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -644,13 +693,17 @@
 				F56D8AB3241B233F000F35B5 /* KVOvc.m in Sources */,
 				F56D8A9E241A2E37000F35B5 /* FrameBoundsTest.m in Sources */,
 				F5F5CBB5242300B5000B9164 /* StartTimeTest.m in Sources */,
+				F5F5CC21242B0410000B9164 /* Aspects.m in Sources */,
 				F5F5CC082426FC78000B9164 /* CategoryTest.m in Sources */,
+				F5F5CC14242AF4FA000B9164 /* MsgSwizzingTest.m in Sources */,
 				F56D8A782419DA10000F35B5 /* AppDelegate.m in Sources */,
 				F56D8A922419DCFF000F35B5 /* TestBaseModel.m in Sources */,
 				F56D8ABC241B2F7D000F35B5 /* NSObject+KVOBlock.m in Sources */,
 				F5F5CAE8241F2182000B9164 /* KVCTest.m in Sources */,
 				F56D8AA1241A2E4E000F35B5 /* FrameBoundsTestVC.m in Sources */,
 				F5F5CBAA2420EBC9000B9164 /* MsgTest.m in Sources */,
+				F5F5CC1D242AFBD5000B9164 /* subMsgTest1+submsgtest.m in Sources */,
+				F5F5CC17242AFACB000B9164 /* MsgTest+msgtest.m in Sources */,
 				F5F5CBC72423169D000B9164 /* DTLauchItemManager.m in Sources */,
 				F5F5CC042425BA26000B9164 /* GCDTest.m in Sources */,
 				F5F5CC1024285FCF000B9164 /* Categroy1Test.m in Sources */,
@@ -663,6 +716,7 @@
 				F5F5CC002425A5FD000B9164 /* InstrumentVC.m in Sources */,
 				F5F5CAEE241F31B1000B9164 /* ThreadTest.m in Sources */,
 				F5F5CBB124221347000B9164 /* NotifyTest.m in Sources */,
+				F5F5CC25242B3CC4000B9164 /* RSSwizzle.m in Sources */,
 				F5F5CBC12423165A000B9164 /* RCCrashManager.m in Sources */,
 				F5F5CBA62420C06E000B9164 /* IGListVC.m in Sources */,
 			);

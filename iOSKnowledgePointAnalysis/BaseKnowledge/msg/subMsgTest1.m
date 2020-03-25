@@ -11,6 +11,6 @@
 @implementation subMsgTest1
 +(void)load {
 //    [super load];
-    NSLog(@"SubMsgTest1 load");
+    NSLog(@"子类 load");
 }
 @end

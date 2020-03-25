@@ -13,12 +13,12 @@
 @implementation SubMsgTest
 
 +(void)load {
-    NSLog(@"SubMsgTest load");
+//    NSLog(@"SubMsgTest load");
 }
 
 + (void)initialize {
     [super initialize];
-    NSLog(@"SubMsgTest initialize");
+//    NSLog(@"SubMsgTest initialize");
 }
 
 @end
@@ -27,12 +27,12 @@
 
 +(void)load {
 
-    NSLog(@"MsgTest load");
+    NSLog(@"父类 load");
 }
 
 + (void)initialize {
     [super initialize];
-    NSLog(@"MsgTest initialize");
+//    NSLog(@"MsgTest initialize");
 }
 
 + (BOOL)resolveInstanceMethod:(SEL)sel {

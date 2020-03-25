@@ -12,6 +12,6 @@
 
 +(void)load {
     
-    NSLog(@"Categroy1Test load");
+//    NSLog(@"Categroy1Test load");
 }
 @end

@@ -9,6 +9,7 @@
 #import "AspectsTest.h"
 #import "Aspects.h"
 #import "objc/runtime.h"
+#import "RSSwizzle.h"
 
 
 @interface SonAspectsTest : TestBaseModel
@@ -50,6 +51,17 @@
 //}
 
 
+- (void)classMethod {
+    NSLog(@"原来的 方法");
+}
+
+- (void)RSSwizzleTest {
+    RSSwizzleInstanceMethod([self class], @selector(classMethod), RSSWReturnType(void), RSSWArguments(), RSSWReplacement({
+        NSLog(@"这个是之后的");
+    }), RSSwizzleModeAlways, NULL);
+}
+
+
 #pragma mark - father func
 
 +(NSMutableArray *)addJumpModel {
@@ -58,14 +70,21 @@
     __block AspectsTest * o = [AspectsTest new];
     JumpModel * j1 = [[JumpModel alloc]initWithIsClassMethond:NO kClass:self sel:@selector(test) title:@"Aspects hook" obj:0 arg:nil];
     j1.jumpBlock = ^(UIViewController *vc) {
-        SonAspectsTest * t = [SonAspectsTest new];
-        BOOL a = [t respondsToSelector:@selector(testRun)];
-        BOOL a1 = [t.class instancesRespondToSelector:@selector(testRun)];
-        BOOL b = [o respondsToSelector:@selector(testRun)];
-        BOOL b1 = [o.class instancesRespondToSelector:@selector(testRun)];
         [o testRun];
     };
     [arr addObject:j1];
+    
+    JumpModel * j2 = [[JumpModel alloc]initWithIsClassMethond:NO kClass:self sel:@selector(test) title:@"RSSwizzle hook" obj:0 arg:nil];
+    j2.jumpBlock = ^(UIViewController *vc) {
+        [o RSSwizzleTest];
+    };
+    [arr addObject:j2];
+    
+    JumpModel * j3 = [[JumpModel alloc]initWithIsClassMethond:NO kClass:self sel:@selector(test) title:@"调用 hook后的方法" obj:0 arg:nil];
+    j3.jumpBlock = ^(UIViewController *vc) {
+        [o classMethod];
+    };
+    [arr addObject:j3];
     
     return arr;
 }

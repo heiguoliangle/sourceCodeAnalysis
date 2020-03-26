@@ -64,7 +64,7 @@ static const char *blockGetType(id block){
     
     return NULL;
 }
-
+// compatible 兼容
 static BOOL blockIsCompatibleWithMethodType(id block, const char *methodType){
     
     const char *blockType = blockGetType(block);

@@ -43,7 +43,7 @@
     JumpModel * j1 = [[JumpModel alloc]initWithIsClassMethond:NO kClass:self sel:@selector(test) title:@"内存泄漏" obj:0 arg:nil];
     j1.jumpBlock = ^(UIViewController *vc) {
         
-//        [o run];
+        [o run];
         [vc.navigationController pushViewController:[InstrumentVC new] animated:YES];
     };
     [arr addObject:j1];

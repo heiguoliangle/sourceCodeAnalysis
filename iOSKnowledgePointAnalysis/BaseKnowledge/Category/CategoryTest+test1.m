@@ -1,19 +1,17 @@
 //
-//  Categroy1Test.m
+//  CategoryTest+test1.m
 //  iOSKnowledgePointAnalysis
 //
-//  Created by guoliang hao on 2020/3/23.
+//  Created by guoliang hao on 2020/4/2.
 //  Copyright © 2020 guoliang hao. All rights reserved.
 //
 
-#import "Categroy1Test.h"
+#import "CategoryTest+test1.h"
 #import <objc/runtime.h>
 
-@implementation Categroy1Test
-
-
+@implementation CategoryTest (test1)
 + (void)swizzleSEL:(SEL)originalSEL withSEL:(SEL)swizzledSEL {
-
+    
     Class class = [self class];
     
     Method originalMethod = class_getInstanceMethod(class, originalSEL);
@@ -37,12 +35,13 @@
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [self swizzleSEL:@selector(lyz_ivar) withSEL:@selector(test)];
+        [self swizzleSEL:@selector(lyz_ivar) withSEL:@selector(test1)];
     });
 }
 
-- (void)test {
-    NSLog(@"Categroy1Test 的");
+- (void)test1 {
+    [self test1];
+    NSLog(@"CategoryTest 分类test的 的");
 }
 
 @end

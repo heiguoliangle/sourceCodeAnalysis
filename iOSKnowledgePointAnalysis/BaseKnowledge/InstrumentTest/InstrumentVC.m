@@ -8,6 +8,7 @@
 
 #import "InstrumentVC.h"
 #import "InstrumentTest.h"
+#import "InstrumentView.h"
 
 @interface InstrumentVC ()
 
@@ -21,6 +22,11 @@
     InstrumentTest * o = [InstrumentTest new];
     o.aTest = [InstrumentATest new];
     [o run];
+    
+    InstrumentView * v = [InstrumentView new];
+    v.frame = CGRectMake(100, 100, 100, 100);
+    [self.view addSubview:v];
+    v.vc = self;
     // Do any additional setup after loading the view.
 }
 

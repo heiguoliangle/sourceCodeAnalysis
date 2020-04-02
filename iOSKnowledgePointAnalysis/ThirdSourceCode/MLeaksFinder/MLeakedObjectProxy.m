@@ -42,7 +42,7 @@ static NSMutableSet *leakedObjectPtrs;
     if (!ptrs.count) {
         return NO;
     }
-    if ([leakedObjectPtrs intersectsSet:ptrs]) {
+    if ([leakedObjectPtrs intersectsSet:ptrs]) { // 是否存在交集
         return YES;
     } else {
         return NO;
@@ -55,7 +55,7 @@ static NSMutableSet *leakedObjectPtrs;
     MLeakedObjectProxy *proxy = [[MLeakedObjectProxy alloc] init];
     proxy.object = object;
     proxy.objectPtr = @((uintptr_t)object);
-    proxy.viewStack = [object viewStack];
+    proxy.viewStack = [object viewStack]; // 这里viewStack 因为是延迟2s后调用的方法,在原有的方法上添加的可见是在viewController 上赋值的
     static const void *const kLeakedObjectProxyKey = &kLeakedObjectProxyKey;
     objc_setAssociatedObject(object, kLeakedObjectProxyKey, proxy, OBJC_ASSOCIATION_RETAIN);
     

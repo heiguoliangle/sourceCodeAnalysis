@@ -28,16 +28,17 @@ const void *const kLatestSenderKey = &kLatestSenderKey;
 
 - (BOOL)willDealloc {
     NSString *className = NSStringFromClass([self class]);
-    if ([[NSObject classNamesWhitelist] containsObject:className])
+    if ([[NSObject classNamesWhitelist] containsObject:className]) // 白名单直接忽略掉
         return NO;
     
     NSNumber *senderPtr = objc_getAssociatedObject([UIApplication sharedApplication], kLatestSenderKey);
-    if ([senderPtr isEqualToNumber:@((uintptr_t)self)])
+    if ([senderPtr isEqualToNumber:@((uintptr_t)self)]) // 如果是当前对象,就忽略掉,这个在target-aciton里面去处理
         return NO;
     
     __weak id weakSelf = self;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         __strong id strongSelf = weakSelf;
+        // 在2秒后依然调用,说明这里有泄漏,self没有被释放
         [strongSelf assertNotDealloc];
     });
     
@@ -45,9 +46,11 @@ const void *const kLatestSenderKey = &kLatestSenderKey;
 }
 
 - (void)assertNotDealloc {
+    // 是否已经添加进泄漏对象名单 有交集
     if ([MLeakedObjectProxy isAnyObjectLeakedAtPtrs:[self parentPtrs]]) {
         return;
     }
+     // 添加进内存泄露名单
     [MLeakedObjectProxy addLeakedObject:self];
     
     NSString *className = NSStringFromClass([self class]);

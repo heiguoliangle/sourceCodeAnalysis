@@ -15,7 +15,7 @@
 #import <objc/runtime.h>
 
 #if _INTERNAL_MLF_ENABLED
-
+// 是否出栈了
 const void *const kHasBeenPoppedKey = &kHasBeenPoppedKey;
 
 @implementation UIViewController (MemoryLeak)
@@ -39,7 +39,7 @@ const void *const kHasBeenPoppedKey = &kHasBeenPoppedKey;
 
 - (void)swizzled_viewWillAppear:(BOOL)animated {
     [self swizzled_viewWillAppear:animated];
-    
+    // 进栈
     objc_setAssociatedObject(self, kHasBeenPoppedKey, @(NO), OBJC_ASSOCIATION_RETAIN);
 }
 

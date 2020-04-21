@@ -38,6 +38,10 @@
 		F57EB4F124357A270014F398 /* NSObject+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EB4E524357A260014F398 /* NSObject+MemoryLeak.m */; };
 		F57EB4F4243585590014F398 /* CategoryTest+test1.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EB4F3243585590014F398 /* CategoryTest+test1.m */; };
 		F57EB4F724358ECD0014F398 /* InstrumentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F57EB4F624358ECD0014F398 /* InstrumentView.m */; };
+		F57EB4FB243598670014F398 /* MLeaksFinder.md in Resources */ = {isa = PBXBuildFile; fileRef = F57EB4FA243598670014F398 /* MLeaksFinder.md */; };
+		F5A040252445D56500758EBB /* MyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A040242445D56500758EBB /* MyTest.m */; };
+		F5A040282449AD7000758EBB /* LLVM.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A040272449AD7000758EBB /* LLVM.m */; };
+		F5E7CA98243EC6AF004C3764 /* GCDDataSourceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E7CA97243EC6AF004C3764 /* GCDDataSourceTest.m */; };
 		F5F5CAE8241F2182000B9164 /* KVCTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F5CAE7241F2182000B9164 /* KVCTest.m */; };
 		F5F5CAEA241F233F000B9164 /* kvc.md in Resources */ = {isa = PBXBuildFile; fileRef = F5F5CAE9241F233F000B9164 /* kvc.md */; };
 		F5F5CAEE241F31B1000B9164 /* ThreadTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F5CAED241F31B1000B9164 /* ThreadTest.m */; };
@@ -201,6 +205,12 @@
 		F57EB4F3243585590014F398 /* CategoryTest+test1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CategoryTest+test1.m"; sourceTree = "<group>"; };
 		F57EB4F524358ECD0014F398 /* InstrumentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstrumentView.h; sourceTree = "<group>"; };
 		F57EB4F624358ECD0014F398 /* InstrumentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstrumentView.m; sourceTree = "<group>"; };
+		F57EB4FA243598670014F398 /* MLeaksFinder.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MLeaksFinder.md; sourceTree = "<group>"; };
+		F5A040232445D56500758EBB /* MyTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTest.h; sourceTree = "<group>"; };
+		F5A040242445D56500758EBB /* MyTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTest.m; sourceTree = "<group>"; };
+		F5A040272449AD7000758EBB /* LLVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLVM.m; sourceTree = "<group>"; };
+		F5E7CA96243EC6AF004C3764 /* GCDDataSourceTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDDataSourceTest.h; sourceTree = "<group>"; };
+		F5E7CA97243EC6AF004C3764 /* GCDDataSourceTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDDataSourceTest.m; sourceTree = "<group>"; };
 		F5F5CAE6241F2182000B9164 /* KVCTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCTest.h; sourceTree = "<group>"; };
 		F5F5CAE7241F2182000B9164 /* KVCTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCTest.m; sourceTree = "<group>"; };
 		F5F5CAE9241F233F000B9164 /* kvc.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = kvc.md; sourceTree = "<group>"; };
@@ -470,6 +480,8 @@
 				F56D8A7A2419DA10000F35B5 /* SceneDelegate.m */,
 				F56D8A7C2419DA10000F35B5 /* ViewController.h */,
 				F56D8A7D2419DA10000F35B5 /* ViewController.m */,
+				F5A040232445D56500758EBB /* MyTest.h */,
+				F5A040242445D56500758EBB /* MyTest.m */,
 				F5F5CB0E2420C01A000B9164 /* ThirdSourceCode */,
 				F56D8A942419E253000F35B5 /* BaseKnowledge */,
 				F56D8A8F2419DCEE000F35B5 /* BaseModel */,
@@ -495,6 +507,7 @@
 		F56D8A942419E253000F35B5 /* BaseKnowledge */ = {
 			isa = PBXGroup;
 			children = (
+				F5A040262449AD4800758EBB /* LLVM */,
 				F5F5CC052426FC69000B9164 /* Category */,
 				F5F5CC012425BA13000B9164 /* GCD */,
 				F5F5CBFA2425A49A000B9164 /* InstrumentTest */,
@@ -588,8 +601,26 @@
 				F57EB4D624357A260014F398 /* UIView+MemoryLeak.m */,
 				F57EB4D524357A260014F398 /* UIViewController+MemoryLeak.h */,
 				F57EB4E124357A260014F398 /* UIViewController+MemoryLeak.m */,
+				F57EB4FA243598670014F398 /* MLeaksFinder.md */,
 			);
 			path = MLeaksFinder;
+			sourceTree = "<group>";
+		};
+		F5A040262449AD4800758EBB /* LLVM */ = {
+			isa = PBXGroup;
+			children = (
+				F5A040272449AD7000758EBB /* LLVM.m */,
+			);
+			path = LLVM;
+			sourceTree = "<group>";
+		};
+		F5E7CA95243EC695004C3764 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				F5E7CA96243EC6AF004C3764 /* GCDDataSourceTest.h */,
+				F5E7CA97243EC6AF004C3764 /* GCDDataSourceTest.m */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		F5F5CAE5241F216D000B9164 /* KVC */ = {
@@ -751,6 +782,7 @@
 		F5F5CC012425BA13000B9164 /* GCD */ = {
 			isa = PBXGroup;
 			children = (
+				F5E7CA95243EC695004C3764 /* DataSource */,
 				F5F5CC022425BA26000B9164 /* GCDTest.h */,
 				F5F5CC032425BA26000B9164 /* GCDTest.m */,
 			);
@@ -1126,6 +1158,7 @@
 				F5F5CBCD24231A79000B9164 /* Main.md in Resources */,
 				F56D8A862419DA12000F35B5 /* LaunchScreen.storyboard in Resources */,
 				F56D8A9B241A2CFE000F35B5 /* Atomic.md in Resources */,
+				F57EB4FB243598670014F398 /* MLeaksFinder.md in Resources */,
 				F56D8A832419DA12000F35B5 /* Assets.xcassets in Resources */,
 				F5F5CC27242B40D0000B9164 /* Apsects.md in Resources */,
 				F5F5CAEA241F233F000B9164 /* kvc.md in Resources */,
@@ -1276,10 +1309,12 @@
 				F5F5CCF2242B6311000B9164 /* LOTKeyframe.m in Sources */,
 				F5F5CC042425BA26000B9164 /* GCDTest.m in Sources */,
 				F5F5CC1024285FCF000B9164 /* Categroy1Test.m in Sources */,
+				F5A040252445D56500758EBB /* MyTest.m in Sources */,
 				F5F5CCED242B6311000B9164 /* LOTKeypath.m in Sources */,
 				F5F5CCCC242B6311000B9164 /* LOTStrokeRenderer.m in Sources */,
 				F57EB4ED24357A270014F398 /* UITabBarController+MemoryLeak.m in Sources */,
 				F5F5CBAD2421FAB5000B9164 /* subMsgTest1.m in Sources */,
+				F5E7CA98243EC6AF004C3764 /* GCDDataSourceTest.m in Sources */,
 				F56D8A892419DA12000F35B5 /* main.m in Sources */,
 				F5F5CBD724237B1C000B9164 /* TimerTest.m in Sources */,
 				F57EB4EA24357A260014F398 /* UITouch+MemoryLeak.m in Sources */,
@@ -1300,6 +1335,7 @@
 				F5F5CCE8242B6311000B9164 /* LOTComposition.m in Sources */,
 				F5F5CCE2242B6311000B9164 /* LOTShapeStroke.m in Sources */,
 				F5F5CCC5242B6311000B9164 /* LOTPathAnimator.m in Sources */,
+				F5A040282449AD7000758EBB /* LLVM.m in Sources */,
 				F5F5CCE1242B6311000B9164 /* LOTShapeTransform.m in Sources */,
 				F57EB4F024357A270014F398 /* UIApplication+MemoryLeak.m in Sources */,
 				F57EB4E724357A260014F398 /* UINavigationController+MemoryLeak.m in Sources */,

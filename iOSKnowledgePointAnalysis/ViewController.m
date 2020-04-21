@@ -43,10 +43,15 @@ static NSString * kPart = @"kPart";
     
     [self initDatas];
     [self.view addSubview:self.tableView];
+    
+     __unsafe_unretained UIView *  v = [UIView new];
+    v = nil;
+    v.backgroundColor ;//= [UIColor redColor];
 }
 
 
 - (void)initDatas {
+    [self addDataWithStr:@"GCDDataSourceTest"];
     [self addDataWithClass:AtomicTest.class];
     [self addDataWithClass:FrameBoundsTest.class];
     [self addDataWithClass:KVOTest.class];
@@ -62,6 +67,7 @@ static NSString * kPart = @"kPart";
     [self addDataWithStr:@"GCDTest"];
     [self addDataWithStr:@"CategoryTest"];
     [self addDataWithStr:@"AspectsTest"];
+    
 }
 
 - (void)addNotify {

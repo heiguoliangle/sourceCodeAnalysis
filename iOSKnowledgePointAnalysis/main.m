@@ -8,16 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
-#import "CategoryTest.h"
+
 
 int main(int argc, char * argv[]) {
-    __block int a = 10;
-
-    void(^ b) (void) = ^ {
-        a = 11;
-    };
-    
-    a = 12;
     
     NSString * appDelegateClassName;
     @autoreleasepool {

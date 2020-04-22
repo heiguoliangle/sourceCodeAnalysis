@@ -41,7 +41,12 @@
 		F57EB4FB243598670014F398 /* MLeaksFinder.md in Resources */ = {isa = PBXBuildFile; fileRef = F57EB4FA243598670014F398 /* MLeaksFinder.md */; };
 		F5A040252445D56500758EBB /* MyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A040242445D56500758EBB /* MyTest.m */; };
 		F5A040282449AD7000758EBB /* LLVM.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A040272449AD7000758EBB /* LLVM.m */; };
+		F5A0402A244EF89D00758EBB /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A04029244EF89D00758EBB /* WebKit.framework */; };
 		F5E7CA98243EC6AF004C3764 /* GCDDataSourceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E7CA97243EC6AF004C3764 /* GCDDataSourceTest.m */; };
+		F5E8D488245035BC0014D986 /* WebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E8D480245035BC0014D986 /* WebViewJavascriptBridgeBase.m */; };
+		F5E8D489245035BC0014D986 /* WKWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E8D481245035BC0014D986 /* WKWebViewJavascriptBridge.m */; };
+		F5E8D48A245035BC0014D986 /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E8D482245035BC0014D986 /* WebViewJavascriptBridge.m */; };
+		F5E8D48B245035BC0014D986 /* WebViewJavascriptBridge_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E8D485245035BC0014D986 /* WebViewJavascriptBridge_JS.m */; };
 		F5F5CAE8241F2182000B9164 /* KVCTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F5CAE7241F2182000B9164 /* KVCTest.m */; };
 		F5F5CAEA241F233F000B9164 /* kvc.md in Resources */ = {isa = PBXBuildFile; fileRef = F5F5CAE9241F233F000B9164 /* kvc.md */; };
 		F5F5CAEE241F31B1000B9164 /* ThreadTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F5CAED241F31B1000B9164 /* ThreadTest.m */; };
@@ -209,8 +214,17 @@
 		F5A040232445D56500758EBB /* MyTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTest.h; sourceTree = "<group>"; };
 		F5A040242445D56500758EBB /* MyTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTest.m; sourceTree = "<group>"; };
 		F5A040272449AD7000758EBB /* LLVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLVM.m; sourceTree = "<group>"; };
+		F5A04029244EF89D00758EBB /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F5E7CA96243EC6AF004C3764 /* GCDDataSourceTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDDataSourceTest.h; sourceTree = "<group>"; };
 		F5E7CA97243EC6AF004C3764 /* GCDDataSourceTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDDataSourceTest.m; sourceTree = "<group>"; };
+		F5E8D480245035BC0014D986 /* WebViewJavascriptBridgeBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridgeBase.m; sourceTree = "<group>"; };
+		F5E8D481245035BC0014D986 /* WKWebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		F5E8D482245035BC0014D986 /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		F5E8D483245035BC0014D986 /* WebViewJavascriptBridge_JS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge_JS.h; sourceTree = "<group>"; };
+		F5E8D484245035BC0014D986 /* WebViewJavascriptBridgeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridgeBase.h; sourceTree = "<group>"; };
+		F5E8D485245035BC0014D986 /* WebViewJavascriptBridge_JS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge_JS.m; sourceTree = "<group>"; };
+		F5E8D486245035BC0014D986 /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		F5E8D487245035BC0014D986 /* WKWebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewJavascriptBridge.h; sourceTree = "<group>"; };
 		F5F5CAE6241F2182000B9164 /* KVCTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCTest.h; sourceTree = "<group>"; };
 		F5F5CAE7241F2182000B9164 /* KVCTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCTest.m; sourceTree = "<group>"; };
 		F5F5CAE9241F233F000B9164 /* kvc.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = kvc.md; sourceTree = "<group>"; };
@@ -420,6 +434,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5A0402A244EF89D00758EBB /* WebKit.framework in Frameworks */,
 				A6B6BDB8D2E25E906F3A695A /* Pods_iOSKnowledgePointAnalysis.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +461,7 @@
 		B886FA96012A3040287E62E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F5A04029244EF89D00758EBB /* WebKit.framework */,
 				5AF7022C172418EF0EC73E29 /* Pods_iOSKnowledgePointAnalysis.framework */,
 			);
 			name = Frameworks;
@@ -623,6 +639,21 @@
 			path = DataSource;
 			sourceTree = "<group>";
 		};
+		F5E8D47F245035BC0014D986 /* WebViewJavascriptBridge */ = {
+			isa = PBXGroup;
+			children = (
+				F5E8D480245035BC0014D986 /* WebViewJavascriptBridgeBase.m */,
+				F5E8D481245035BC0014D986 /* WKWebViewJavascriptBridge.m */,
+				F5E8D482245035BC0014D986 /* WebViewJavascriptBridge.m */,
+				F5E8D483245035BC0014D986 /* WebViewJavascriptBridge_JS.h */,
+				F5E8D484245035BC0014D986 /* WebViewJavascriptBridgeBase.h */,
+				F5E8D485245035BC0014D986 /* WebViewJavascriptBridge_JS.m */,
+				F5E8D486245035BC0014D986 /* WebViewJavascriptBridge.h */,
+				F5E8D487245035BC0014D986 /* WKWebViewJavascriptBridge.h */,
+			);
+			path = WebViewJavascriptBridge;
+			sourceTree = "<group>";
+		};
 		F5F5CAE5241F216D000B9164 /* KVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -664,6 +695,7 @@
 		F5F5CB0E2420C01A000B9164 /* ThirdSourceCode */ = {
 			isa = PBXGroup;
 			children = (
+				F5E8D47F245035BC0014D986 /* WebViewJavascriptBridge */,
 				F57EB4CF24357A260014F398 /* MLeaksFinder */,
 				F5F5CC2B242B6303000B9164 /* lottie */,
 				F5F5CC22242B3CC4000B9164 /* RSSwizzle */,
@@ -1294,6 +1326,7 @@
 				F5F5CCD2242B6311000B9164 /* CALayer+Compat.m in Sources */,
 				F5F5CCF5242B6311000B9164 /* LOTCompositionContainer.m in Sources */,
 				F5F5CCBE242B6311000B9164 /* LOTSizeInterpolator.m in Sources */,
+				F5E8D488245035BC0014D986 /* WebViewJavascriptBridgeBase.m in Sources */,
 				F57EB4EC24357A270014F398 /* UIPageViewController+MemoryLeak.m in Sources */,
 				F5F5CCF3242B6311000B9164 /* LOTBezierData.m in Sources */,
 				F5F5CCC2242B6311000B9164 /* LOTArrayInterpolator.m in Sources */,
@@ -1323,7 +1356,9 @@
 				F5F5CCC6242B6311000B9164 /* LOTPolystarAnimator.m in Sources */,
 				F5F5CCE5242B6311000B9164 /* LOTRadialGradientLayer.m in Sources */,
 				F56D8A7B2419DA10000F35B5 /* SceneDelegate.m in Sources */,
+				F5E8D48B245035BC0014D986 /* WebViewJavascriptBridge_JS.m in Sources */,
 				F5F5CC002425A5FD000B9164 /* InstrumentVC.m in Sources */,
+				F5E8D489245035BC0014D986 /* WKWebViewJavascriptBridge.m in Sources */,
 				F5F5CAEE241F31B1000B9164 /* ThreadTest.m in Sources */,
 				F5F5CCDD242B6311000B9164 /* LOTShapeCircle.m in Sources */,
 				F5F5CBB124221347000B9164 /* NotifyTest.m in Sources */,
@@ -1337,6 +1372,7 @@
 				F5F5CCC5242B6311000B9164 /* LOTPathAnimator.m in Sources */,
 				F5A040282449AD7000758EBB /* LLVM.m in Sources */,
 				F5F5CCE1242B6311000B9164 /* LOTShapeTransform.m in Sources */,
+				F5E8D48A245035BC0014D986 /* WebViewJavascriptBridge.m in Sources */,
 				F57EB4F024357A270014F398 /* UIApplication+MemoryLeak.m in Sources */,
 				F57EB4E724357A260014F398 /* UINavigationController+MemoryLeak.m in Sources */,
 				F5F5CCF1242B6311000B9164 /* LOTAnimatedSwitch.m in Sources */,
